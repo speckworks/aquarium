@@ -1,0 +1,15 @@
+<h1>Build a Brand New Aquarium</h1>
+
+<%= form_for @aquarium do |f| %>
+    <%= f.label :owner %>:
+    <%= f.text_field :owner %><br />
+    <hr>
+<div>
+  <%= f.label :size %>:
+  <%= f.number_field :size %><br />
+  <hr>
+<div>
+  <%= f.label :water %>:
+  <%= f.check_box :water%><br />
+    <%= f.submit %>
+<% end %>

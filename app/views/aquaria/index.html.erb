@@ -1,0 +1,14 @@
+<h1>Aquarium Life!!</h1>
+<% @aquaria.each do |aquarium|%>
+<ul>
+    <li>
+<%= link_to aquarium.owner, aquarium_path(aquarium)%>'s Super Cool Pool for Fish.
+    </li>
+    <li>
+<%= aquarium.size%> is the size of this Aquarium.
+    </li>
+<%end%>
+</ul>
+<div>
+<%= button_to "Create a New Aquarium", new_aquarium_path, method: :get%>
+</div>
