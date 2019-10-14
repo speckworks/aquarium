@@ -23,7 +23,7 @@ class AquariaController < ApplicationController
     def update
         @aquarium = Aquarium.find(params[:id])
         @aquarium.update(params.require(:aquarium).permit(:size, :owner, :water))
-        redirect_to aquarium_path(@aquarium)
+        redirect_to aquarium_path
     end
 
     def destroy

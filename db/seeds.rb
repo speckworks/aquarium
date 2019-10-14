@@ -5,7 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Aquarium.destroy_all
+Fish.destroy_all
+Artifact.destroy_all
+Vegetation.destroy_all
 
 a1 = Aquarium.create(owner: "Jim_s", water:true, size:10)
 a2 = Aquarium.create(owner:"John_s", water:false, size:9)
