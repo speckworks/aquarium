@@ -1,0 +1,18 @@
+<h1> Index of Fishes</h1>
+
+<h3>Search for a Fish</h3>
+
+<%= form_tag(fish_index_path method: :get) do %>
+  Fish <%= text_field_tag :store, params[:store] %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+
+<div>
+<% @fishes.each do |fish| %><br>
+<%= fish.kind%><br>
+<%= fish.quantity%><br>
+<%= fish.alive%><br>
+<% end%>
+</div>
+

@@ -1,0 +1,7 @@
+<h1>Create a New Fish</h1>
+
+<%= form_for @fish do |f|%>
+<%= f.label :kind%>
+<%= f.radio_button :kind, "fish"%>
+<%= f.submit%>
+<%end%>
