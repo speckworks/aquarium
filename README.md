@@ -1,24 +1,10 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
+This is a basic Ruby on Rails APP I built to practice building out CRUD functionality. 
 Things you may want to cover:
 
-* Ruby version
+It employs Ruby 2.6.3 
+Rails 6.0
+PostGreSQL database
 
-* System dependencies
+It is currently deployed at:
+https://nameless-ravine-67588.herokuapp.com/aquaria
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
