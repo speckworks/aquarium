@@ -1,4 +1,4 @@
-This is a basic Ruby on Rails APP I built to practice building out CRUD functionality. 
+This is a Ruby on Rails APP I built to practice building out CRUD functionality. 
 
 It employs Ruby 2.6.3 
 Rails 6.0
