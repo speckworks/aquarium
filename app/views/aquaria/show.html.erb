@@ -2,6 +2,8 @@
 
 <h1 class="single-aquarium">This is   <%=@aquarium.owner%>'s Super Cool Aquatic Environment.
 <hr><%=@aquarium.owner%> has a <%=@aquarium.size%>-sized Aquarium.
+<h2 class="fish-in-aquarium"> <%=@aquarium.owner%>'s Fish are "<%=@fish.kind%>" fish.
+</h2>
 
 
 <h2><%=button_to "Edit This Aquarium", edit_aquarium_path, method: :get %> </h2>

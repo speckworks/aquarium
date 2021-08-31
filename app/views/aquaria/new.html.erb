@@ -8,13 +8,23 @@
   <%= f.label :size %>:
   <%= f.number_field :size %><br />
   <hr>
-  
+  </div>
 <div>
   <%= f.label :water %>:
   <%= f.check_box :water%><br />
+</div>
+   <div class="selectFish">
+    <%= f.label :fish, class: "control-group"%>
+    <div class="controls">
+    <%= collection_select(:fish, :aquarium_id, Fish.all, :id, :kind, {:prompt=>"Select a Fishy"}) %>
+    </div>
+    </div>
+
     <%= f.submit %>
 
+
 <% end %>
+
 
 
 

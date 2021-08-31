@@ -5,6 +5,7 @@ class AquariaController < ApplicationController
 
     def show
         @aquarium = Aquarium.find(params[:id])
+        @fish = Fish.find(params[:id])
     end
 
     def new
