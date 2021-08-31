@@ -4,7 +4,6 @@ class CreateAquaria < ActiveRecord::Migration[6.0]
       t.integer :size
       t.boolean :water
       t.string :owner
-
       t.timestamps
     end
   end

@@ -17,14 +17,12 @@ class FishController < ApplicationController
     end
 
     def create
-        @fish = Fish.find(params[:id])
-        @fish.update(fish_params)
+        @fish = Fish.create(params.require(:fish).permit(:kind,:quantity,:alive,:aquarium_id,:id))
         redirect_to fish_path(@fish)
     end
 
     def edit
         @fish = Fish.find(params[:id])
-
     end
 
     def update
@@ -36,6 +34,13 @@ class FishController < ApplicationController
     def destroy
     end
 
+    def name
+    "#{@fish.kind}"
+    end
+
+    def alive 
+    "#{@fish.alive}"
+    end 
 
     private
 

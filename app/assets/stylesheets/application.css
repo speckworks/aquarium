@@ -24,3 +24,54 @@
     padding:0;
     margin:0;
 }
+
+h1 {
+    background: whitesmoke;
+    /* text-shadow: 2px 1px 8px blue; */
+    color: red;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 1px 1px 8px #ffffff91;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+h1.single-aquarium {
+    font-size: 1.325em;
+    color: green;
+}
+
+input[type="submit"] {
+    color: darkblue;
+    background-color: turquoise;
+    font-size: 0.75em;
+    padding: 10px;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: all ease .9s;
+}
+
+input[type="submit"]:hover {
+    transform: perspective(50px);
+    cursor: pointer;
+    box-shadow: 3px 3px 6px black;
+    transform: rotateX(0deg) translate3d(0, 0, 50px);
+    transform: rotateY(360deg) translate3d(0, 0, 250px);
+}
+
+p.owner-label {
+    padding: 0px;
+    width: 30%;
+    margin: 0 auto;
+    background: #D3D3D391;
+    border-radius: 3px;
+    color: darkblue;
+    padding: 1%;
+    box-shadow: 1px 1px 8px #ffffff91;
+}
+
+div {
+    margin: 1%;
+}

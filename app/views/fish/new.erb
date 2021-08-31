@@ -1,7 +1,21 @@
 <h1>Create a New Fish</h1>
 
-<%= form_for @fish do |f|%>
-<%= f.label :kind%>
-<%= f.radio_button :kind, "fish"%>
-<%= f.submit%>
+<%= form_for @fish do |f| %>
+    <%= f.label :kind %>:
+    <%= f.text_field :kind %>
+    <hr>
+<div>
+  <%= f.label :quantity %>:
+  <%= f.number_field :quantity %>
+  <hr>
+  </div>
+<div>
+  <%= f.label :alive %>:
+  <%= f.check_box :alive%>
+</div>
+ <%= f.label :aquarium_id %>:
+  <%= f.number_field :aquarium_id %><br />
+  <%= f.label :id %>:
+  <%= f.number_field :id %><br />
+    <%= f.submit %>
 <%end%>
